@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Water calculator</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h1 class="content__title">Water Intake Calculator</h1>
+        <input type="checkbox" id="switch" /><label for="switch"
+          ><span> male </span> <span>female</span>
+        </label>
+        <!-- <div class="radio-switch">
+          <div class="switch">
+            <input
+              type="radio"
+              id="сhoice1"
+              name="switch"
+              value="male"
+              checked="checked"
+            />
+            <label for="сhoice1"> <span> MALE </span></label>
+          </div>
+          <div class="switch">
+            <input type="radio" id="сhoice2" name="switch" value="female" />
+            <label for="сhoice2"> <span> FEMALE </span></label>
+          </div>
+        </div> -->
+        <div class="content__box">
+          <h2 class="text">AGE</h2>
+          <input
+            class="input"
+            type="text"
+            id="age"
+            maxlength="2"
+            autocomplete="off"
+          />
+
+          <h2 class="text">WEIGHT</h2>
+          <input
+            class="input"
+            type="text"
+            id="weight"
+            maxlength="3"
+            autocomplete="off"
+          />
+
+          <h2 class="text">Duration of Workout <span>(hr/day)</span></h2>
+          <input
+            class="input"
+            type="text"
+            id="activity"
+            autocomplete="off"
+            maxlength="2"
+          />
+        </div>
+        <button type="button" class="btn" onclick="waterCount()">
+          CALCULATE
+        </button>
+
+        <div id="results" class="results"></div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
